@@ -31,6 +31,7 @@ void bubblesort(int ary[], int len) // bubble sort
             }
         }
     }
+    showElem(ary, len);
 }
 
 int main()
@@ -39,7 +40,6 @@ int main()
     int len = sizeof(arr1)/sizeof(int); // Length
     printf("Before sorting = ");
     showElem(arr1, len);
-    bubblesort(arr1,len);
     printf("After sorting = ");
-    showElem(arr1, len);
+    bubblesort(arr1,len);
 }
