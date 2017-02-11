@@ -38,8 +38,13 @@ int main()
 {
     int arr1[] = {4,5,3,1,2};
     int len = sizeof(arr1)/sizeof(int); // Length
+    /*
     printf("Before sorting = ");
     showElem(arr1, len);
     printf("After sorting = ");
     bubblesort(arr1,len);
+    */
+    void (*bbsrt)(int *, int) = bubblesort; // function pointer
+    bbsrt(arr1,len);
+
 }
